@@ -1,0 +1,10 @@
+html {
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+img {
+    /* display: block;
+    margin: 0 auto; */
+    height: 500px;
+    width: 500px;
+}
