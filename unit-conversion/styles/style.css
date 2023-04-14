@@ -1,0 +1,25 @@
+header {
+    background-color: yellowgreen;
+    
+}
+
+#temperature {
+    background-color: bisque;
+}
+#weight {
+    background-color: aquamarine;
+}
+#distance {
+    background-color: blueviolet;
+}
+
+nav {
+    background-color: cadetblue;
+    text-align: left;
+
+}
+
+body {
+    text-align: center;
+}
+
