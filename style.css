@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(244, 247, 219);
+}
+
+header {
+    border: 2px dashed rgb(77, 4, 21);
+    color: rgb(123, 34, 4);
+    text-align: center;
+    margin: 0 25%;
+}
+
+.web-page-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
