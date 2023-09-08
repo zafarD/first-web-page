@@ -5,6 +5,7 @@ header {
 
 #temperature {
     background-color: bisque;
+    margin: 0 50px;
 }
 #weight {
     background-color: aquamarine;
@@ -13,10 +14,15 @@ header {
     background-color: blueviolet;
 }
 
-nav {
-    background-color: cadetblue;
-    text-align: left;
+.nav-bar {
+    display: flex;
+    background-color: rgb(209, 229, 230);
+    justify-content: center;
+    
+}
 
+.links {
+    gap: 20px;
 }
 
 body {
