@@ -1,84 +1,270 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Zafar ahasan">
-        <meta name="discription" content="All zafar project are listed in this website for web development">
-        <title>HOME_PAGE</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <nav class="desktop-nav">
-            <div id="logo"><p>Zafar Ahasan</p></div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Zafar Ahasan">
+    <meta name="description" content="Zafar Ahasan portfolio">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Zafar Ahasan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Zafar Ahasan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/profile-pic.jpg" alt="Zafar Ahasan profile picture" />
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Zafar Ahasan</h1>
+            <p class="section-text-p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assests/cv-sample.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/zafar-ahasan-118626209/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/zafarD'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section-text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./assets/zafar1.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                        <h3>Fresher</h3>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Tech in Electrical Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        As a fast learner, looking for a challenging role in a reputable organization to utilize
+                        my technical and management skills for the growth of the organization as well as to enhance my
+                        knowledge about new and emerging trends in the IT sector.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+    </section>
+    <section id="skills">
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Spring MVC</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
         <div class="web-page-link">
-            <h2>My Web Pages</h2>
-            <ul>
+            <ul class="project-list">
                 <li>
-                    <a href="TinDog Project/index.html" title="TinDog">
+                    <a href="./project-page/Project/index.html" title="TinDog">
                         TinDog
                     </a>
                 </li>
                 <li>
-                    <a href="ZafXpress/index.html" title="ZafXpress HOME_PAGE">
+                    <a href="./project-page/ZafXpress/index.html" title="ZafXpress HOME_PAGE">
                         ZafXpress
                     </a>
                 </li>
-
+        
                 <li>
-                    <a href="Flexbox Pricing Table Project/index.html" title="Flexbox Pricing Table">
+                    <a href="./project-page/Flexbox Pricing Table Project/index.html" title="Flexbox Pricing Table">
                         Flexbox Pricing Table
                     </a>
                 </li>
                 <li>
-                    <a href="Mondrian Project/index.html" title="Mondrian Paint">
+                    <a href="./project-page/Mondrian Project/index.html" title="Mondrian Paint">
                         Mondrian Paint
                     </a>
                 </li>
-                
+        
                 <li>
-                    <a href="markup-letter/index.html" title="letter format using html tags">
+                    <a href="./project-page/markup-letter/index.html" title="letter format using html tags">
                         markup-letter
                     </a>
                 </li>
                 <li>
-                    <a href="kolkata-info-app/index.html" title="Information about kolkata" target="_blank">
-                    kolkata-info-page
+                    <a href="./project-page/kolkata-info-app/index.html" title="Information about kolkata" target="_blank">
+                        kolkata-info-page
                     </a>
                 </li>
                 <li>
-                    <a href="./hummas-recipe/index.html" title="hummas-recipe" target="_blank">
+                    <a href=".project-page/hummas-recipe/index.html" title="hummas-recipe" target="_blank">
                         Hummas Recipe
                     </a>
                 </li>
                 <li>
-                    <a href="anime-info-app/index.html" title="About anime japan's most popular industry" target="_blank">
-                    anime-info-page
+                    <a href="./project-page/anime-info-app/index.html" title="About anime japan's most popular industry" target="_blank">
+                        anime-info-page
                     </a>
                 </li>
-                
+        
                 <li>
-                    <a href="unit-conversion/index.html" title="Convert temperature, weight or distance" target="_blank">
+                    <a href="./project-page/unit-conversion/index.html" title="Convert temperature, weight or distance" target="_blank">
                         unit-onversion-page
                     </a>
                 </li>
-                
+        
                 <li>
-                    <a href="form/index.html" title="Form sample code" target="_blank">
+                    <a href="./project-page/form/index.html" title="Form sample code" target="_blank">
                         A form Example
                     </a>
                 </li>
             </ul>
         </div>
+        <div class="project-git">
+            <h3>For more Projects details Please go to my Github Repository</h3>
+            <a href="https://github.com/zafarD" title="Zafar's Github Repository">
+                Click Here
+            </a> 
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:zafarahasanit@gmail.com">zafarahasanit@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/zafar-ahasan-118626209/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Zafar Ahasan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 
-    </body>
 </html>
