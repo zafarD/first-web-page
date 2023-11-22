@@ -176,8 +176,7 @@ section {
     margin: auto 0;
 }
 
-.section-pic-container  {
-    width: 300px;
+.section-pic-container img {
     border-radius: 20%;
 }
 
@@ -192,7 +191,6 @@ section {
 
 .section-text-p1 {
     text-align: center;
-    margin-top: 1rem;
 }
 
 .section-text-p2 {
