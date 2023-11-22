@@ -18,7 +18,7 @@ h1 {
   margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
+  font-size: 5rem;
   color: #4ECCA3;
 }
 
@@ -29,11 +29,24 @@ p {
 }
 
 img {
-  width: 80%;
+  width: 70%;
+}
+
+#btn {
+  margin-top: 1rem;
+  background-color: antiquewhite;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#btn:hover {
+  color: rgb(98, 160, 70);
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 footer {
-  margin-top: 5%;
+  margin-top: 10px;
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
