@@ -59,13 +59,20 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo p {
+    font-size: 2.25rem;
+}
+.aha-logo {
+    width: 100px
 }
 
 .logo:hover {
     cursor: default;
 }
-
 /* HAMBURGER MENU */
 
 #hamburger-nav {

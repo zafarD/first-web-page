@@ -19,8 +19,17 @@
         display: none;
     }
 
+
     #hamburger-nav {
         display: flex;
+    }
+
+    .logo p {
+        font-size: 2rem;
+    }
+
+    .aha-logo {
+        width: 95px
     }
 
     #skills,
@@ -58,6 +67,14 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    .logo p {
+        font-size: 1.85rem;
+    }
+
+    .aha-logo {
+        width: 90px
+    }
 
     #contact,
     footer {
